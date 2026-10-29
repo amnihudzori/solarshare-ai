@@ -1,0 +1,1028 @@
+.monitoring-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 6px;
+  padding: 20px 13px 10px;
+}
+.monitoring-links > span {
+  grid-column: 1/-1;
+  font-size: 8px;
+  letter-spacing: 1.2px;
+  color: #8a9a8f;
+  margin-bottom: 5px;
+}
+.monitoring-links a {
+  font-size: 10px;
+  color: #6c8274;
+  text-decoration: none;
+  padding: 4px 0;
+}
+.monitoring-links a.active {
+  color: #103d32;
+  font-weight: 700;
+}
+.app-shell .solar-note {
+  display: none;
+}
+.sidebar-user small {
+  max-width: 145px;
+  font-size: 8px;
+}
+.township-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 305px;
+  gap: 18px;
+  flex: 1;
+  min-height: 0;
+}
+.planner-map-card {
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+  min-height: 0;
+  gap: 14px;
+}
+.planner-map-card .section-title p {
+  max-width: 520px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.township-map {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  background: #f3f5ed;
+  border-radius: 11px;
+  padding: 9px;
+  overflow: hidden;
+}
+.township-map > svg {
+  width: 100%;
+  flex: 1;
+  min-height: 120px;
+  border-radius: 8px;
+  max-height: 400px;
+}
+.map-corner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8px;
+  letter-spacing: 1.1px;
+  color: #67816d;
+  padding: 2px 4px;
+  font-weight: 650;
+}
+.property-overlay {
+  cursor: pointer;
+  outline: none;
+}
+.property-overlay:focus-visible > rect {
+  stroke: #b28b34;
+  stroke-width: 5;
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 11px;
+  padding: 3px 2px;
+}
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 8px;
+  color: #718376;
+}
+.map-legend i {
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+}
+.township-map > small {
+  font-size: 8px;
+  padding: 0 2px;
+}
+.property-panel {
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c7d6c9 transparent;
+}
+.property-panel h2 {
+  font-size: 23px;
+}
+.property-panel p {
+  font-size: 11px;
+}
+.property-panel label {
+  font-size: 11px;
+}
+.property-panel input,
+.property-panel select,
+.property-panel textarea {
+  font-size: 11px;
+  padding: 10px;
+}
+.property-panel textarea {
+  height: 72px;
+  resize: vertical;
+  min-height: 55px;
+}
+.property-panel .button {
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.property-fact {
+  border-bottom: 1px solid #e7eee6;
+  padding-bottom: 13px;
+}
+.property-fact small {
+  font-size: 10px;
+  display: block;
+}
+.property-fact strong {
+  font-size: 12px;
+  display: block;
+  margin-top: 6px;
+}
+.participation-status {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  border: 1px solid #dbe8df;
+  background: #edf5ef;
+  border-radius: 5px;
+  color: #397d5a;
+  padding: 5px 7px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.status-withdrawn {
+  background: #f8ebea;
+  border-color: #efd5d2;
+  color: #9a5e59;
+}
+.status-installed {
+  background: #103d32;
+  color: #fff;
+  border-color: #103d32;
+}
+.status-under-review,
+.status-reviewing {
+  background: #edf3f7;
+  color: #4c7890;
+  border-color: #d7e4ed;
+}
+.status-more-information-needed,
+.status-reported,
+.status-visit-planned {
+  background: #fbf4e5;
+  color: #916d2e;
+  border-color: #eee2c9;
+}
+.status-no-recorded-interest {
+  background: #f3f5f1;
+  color: #7d8c81;
+}
+.status-closed {
+  background: #edf5ef;
+  color: #397d5a;
+}
+.compact {
+  font-size: 10px;
+  padding: 11px;
+  line-height: 1.55;
+}
+.planner-toolbar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 36px;
+  flex-wrap: wrap;
+}
+.house-search {
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+  color: #718478;
+  font-size: 10px;
+  margin-left: auto;
+}
+.house-search select {
+  width: 82px;
+  padding: 8px;
+  font-size: 11px;
+}
+.house-query {
+  width: 125px;
+  font-size: 11px;
+  padding: 9px;
+}
+.ripple-figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 2px 0;
+}
+.ripple-figures small {
+  font-size: 9px;
+  display: block;
+}
+.ripple-figures strong {
+  display: block;
+  font-size: 20px;
+  color: #103d32;
+  letter-spacing: -0.5px;
+  margin-top: 5px;
+}
+.planner-side {
+  gap: 13px;
+}
+.planner-side > .eyebrow {
+  font-size: 8px;
+}
+.planner-side h2 {
+  font-size: 22px;
+}
+.planner-side p,
+.planner-side small {
+  font-size: 10px;
+}
+.planner-side select:disabled {
+  background: #f2f4ef;
+  color: #929e95;
+}
+.ripple-warning {
+  background: #fcf3dc;
+  color: #956f28 !important;
+  padding: 10px;
+  border-radius: 6px;
+}
+.alternative-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.alternative-list h3 {
+  margin-bottom: 3px;
+}
+.alternative-list button {
+  border: 1px solid #dce7dc;
+  border-radius: 9px;
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  background: #fafbf7;
+}
+.alternative-list button.chosen {
+  border-color: #b28b34;
+  background: #fbf5e7;
+}
+.alternative-list button strong {
+  font-size: 12px;
+}
+.alternative-list button small {
+  font-size: 9px;
+  line-height: 1.6;
+}
+.alternative-list button span {
+  font-size: 10px;
+  color: #397e5b;
+  font-weight: 600;
+}
+.opportunity-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(270px, 1fr);
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+.opportunity-form,
+.application-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: auto;
+  min-height: 0;
+  scrollbar-width: thin;
+}
+.opportunity-form p {
+  font-size: 12px;
+}
+.roof-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.roof-fields label:first-child {
+  grid-column: 1/-1;
+}
+.roof-fields input,
+.roof-fields select {
+  padding: 11px;
+  font-size: 12px;
+}
+.estimate-equations {
+  background: #f4f7ef;
+  border-radius: 9px;
+  padding: 15px;
+}
+.estimate-equations strong {
+  font-size: 12px;
+}
+.estimate-equations p {
+  font-size: 11px;
+  margin-top: 7px;
+}
+.estimate-equations small {
+  display: block;
+  font-size: 10px;
+  margin-top: 7px;
+}
+.consent-check {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 11px;
+  line-height: 1.6;
+  font-weight: 450;
+}
+.consent-check input {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.opportunity-result {
+  padding: 28px;
+  background: linear-gradient(150deg, #103d32, #235d47);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  min-height: 0;
+  overflow: auto;
+}
+.opportunity-result > .eyebrow {
+  color: #bdd4ba;
+}
+.opportunity-result > strong {
+  font-size: 45px;
+  letter-spacing: -1.8px;
+  line-height: 1.05;
+}
+.opportunity-result > strong span {
+  display: block;
+  font-size: 11px;
+  color: #bdd1bf;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-top: 9px;
+}
+.opportunity-result > p {
+  color: #c4d6c8;
+  font-size: 12px;
+}
+.opportunity-result > .compact {
+  background: #ffffff0c;
+  color: #d3e0d5;
+}
+.opportunity-result > small {
+  color: #bdd1bf;
+  font-size: 10px;
+}
+.persona-select {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+}
+.persona-select select {
+  width: 230px;
+  font-size: 11px;
+  padding: 9px;
+}
+.resident-next {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  background: #edf3e7;
+}
+.resident-next > svg {
+  color: #7b9f72;
+}
+.resident-next h2 {
+  font-size: 26px;
+}
+.resident-next p {
+  font-size: 12px;
+}
+.application-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 15px;
+  background: #f5f8f2;
+  border-radius: 8px;
+}
+.application-details > div:last-child {
+  grid-column: 1/-1;
+}
+.application-details small {
+  display: block;
+  font-size: 10px;
+}
+.application-details strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+}
+.record-history {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-height: 55px;
+  overflow: auto;
+  scrollbar-width: thin;
+  flex: 1;
+}
+.record-history > div {
+  border-left: 2px solid #dce7d8;
+  padding-left: 13px;
+  flex-shrink: 0;
+}
+.record-history p {
+  font-size: 11px;
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+}
+.withdraw-confirm {
+  padding: 15px;
+  border: 1px solid #ebd7b1;
+  background: #fff8e9;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.withdraw-confirm p {
+  font-size: 11px;
+}
+.rescue-layout {
+  display: grid;
+  grid-template-columns: minmax(270px, 1fr) minmax(0, 1.65fr);
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+.support-list,
+.support-detail {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.support-list textarea,
+.support-detail textarea {
+  min-height: 85px;
+  resize: vertical;
+  font-size: 12px;
+}
+.support-list label,
+.support-detail label {
+  font-size: 11px;
+}
+.support-list h2 {
+  font-size: 19px;
+}
+.case-item {
+  background: #f5f9f1;
+  padding: 14px;
+  border: 1px solid #dce8d7;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+  text-align: left;
+}
+.case-item.selected {
+  border-color: #15966b;
+}
+.case-item strong {
+  font-size: 12px;
+}
+.case-item p {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.case-issue {
+  background: #f6f8f2;
+  border-radius: 8px;
+  padding: 15px;
+  color: #56715f;
+  overflow-wrap: anywhere;
+}
+.review-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+.application-table {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 16px;
+}
+.table-scroll {
+  overflow: auto;
+  min-height: 0;
+  scrollbar-width: thin;
+}
+.application-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+.application-table th {
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: #f5f8f0;
+  color: #8c9b8b;
+  padding: 12px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+}
+.application-table td {
+  padding: 12px;
+  border-bottom: 1px solid #edf1e8;
+  color: #718171;
+}
+.application-table tr.selected td {
+  background: #f0f7ec;
+}
+.application-table td > strong {
+  font-size: 12px;
+  color: #3f6249;
+}
+.application-table td small {
+  display: block;
+  font-size: 8px;
+  margin-top: 4px;
+}
+.application-table .text-button {
+  font-size: 10px;
+  white-space: nowrap;
+}
+.application-table .participation-status {
+  font-size: 8px;
+  white-space: normal;
+}
+.application-table .pill {
+  font-size: 8px;
+}
+.insights-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 0;
+  flex: 1;
+  justify-content: center;
+}
+.insight-body {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: #f0f5eb;
+  padding: 25px;
+  border-radius: 11px;
+}
+.insight-body > svg {
+  color: #9ebd91;
+  flex-shrink: 0;
+}
+.insight-body h2 {
+  margin: 12px 0;
+  font-size: 24px;
+}
+.insight-body p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.planner-map-card > .compact {
+  flex-shrink: 0;
+}
+.property-panel > .compact {
+  flex-shrink: 0;
+}
+@media (min-width: 1100px) and (max-height: 800px) {
+  .opportunity-form {
+    gap: 14px;
+    padding: 20px;
+  }
+  .opportunity-result {
+    gap: 18px;
+    padding: 24px;
+  }
+  .opportunity-result > strong {
+    font-size: 37px;
+  }
+  .property-panel {
+    gap: 12px;
+    padding: 18px;
+  }
+  .planner-side {
+    gap: 11px;
+  }
+  .planner-side h2 {
+    font-size: 20px;
+  }
+  .township-layout {
+    grid-template-columns: minmax(0, 1fr) 290px;
+  }
+  .planner-map-card {
+    padding: 16px;
+    gap: 10px;
+  }
+  .ripple-figures strong {
+    font-size: 17px;
+  }
+  .map-legend {
+    gap: 5px 8px;
+  }
+  .map-legend span {
+    font-size: 7px;
+  }
+  .map-corner {
+    font-size: 7px;
+  }
+  .application-card {
+    gap: 14px;
+    padding: 20px;
+  }
+  .support-list,
+  .support-detail {
+    gap: 14px;
+    padding: 20px;
+  }
+  .application-table td {
+    padding: 10px;
+  }
+  .planner-toolbar .tabs button {
+    padding: 8px 12px;
+  }
+  .application-table th {
+    padding: 10px;
+  }
+  .review-layout {
+    grid-template-columns: minmax(0, 1fr) 295px;
+  }
+  .roof-fields input,
+  .roof-fields select {
+    padding: 9px;
+  }
+  .estimate-equations {
+    padding: 12px;
+  }
+  .roof-fields {
+    gap: 12px;
+  }
+}
+@media (max-width: 1099px) {
+  .township-layout,
+  .review-layout {
+    grid-template-columns: minmax(0, 1fr) 255px;
+  }
+  .planner-map-card {
+    padding: 14px;
+  }
+  .ripple-figures {
+    grid-template-columns: 1fr 1fr;
+  }
+  .property-panel {
+    padding: 16px;
+  }
+  .map-legend span {
+    font-size: 7px;
+  }
+  .opportunity-result {
+    padding: 22px;
+    gap: 18px;
+  }
+  .opportunity-result > strong {
+    font-size: 35px;
+  }
+  .application-table {
+    padding: 14px;
+  }
+  .application-table td {
+    padding: 9px;
+  }
+  .application-table th {
+    padding: 9px;
+  }
+  .application-table .pill {
+    display: none;
+  }
+  .persona-select select {
+    width: 185px;
+  }
+  .planner-toolbar {
+    gap: 10px;
+  }
+  .opportunity-form {
+    padding: 18px;
+    gap: 15px;
+  }
+  .monitoring-links {
+    padding: 15px 10px;
+  }
+  .monitoring-links a {
+    font-size: 9px;
+  }
+  .support-list,
+  .support-detail {
+    padding: 18px;
+  }
+  .sidebar-user small {
+    white-space: normal;
+  }
+  .opportunity-layout {
+    grid-template-columns: minmax(0, 1.3fr) minmax(230px, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .monitoring-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+  }
+  .monitoring-links > span {
+    display: none;
+  }
+  .monitoring-links a {
+    font-size: 9px;
+    background: #f1f5ee;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  .township-layout,
+  .opportunity-layout,
+  .review-layout,
+  .rescue-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .township-map {
+    min-height: 330px;
+    overflow: visible;
+  }
+  .township-map > svg {
+    min-height: 190px;
+    flex: auto;
+  }
+  .map-legend {
+    gap: 7px 10px;
+  }
+  .map-legend span {
+    font-size: 8px;
+  }
+  .map-corner {
+    font-size: 7px;
+  }
+  .township-map > small {
+    font-size: 8px;
+  }
+  .planner-map-card {
+    padding: 15px;
+    gap: 18px;
+  }
+  .property-panel {
+    gap: 18px;
+    padding: 23px;
+    overflow: visible;
+  }
+  .property-panel h2 {
+    font-size: 25px;
+  }
+  .property-panel p,
+  .property-panel label,
+  .property-panel input,
+  .property-panel select {
+    font-size: 12px;
+  }
+  .property-panel small {
+    font-size: 11px;
+  }
+  .property-panel > .eyebrow {
+    font-size: 8px;
+  }
+  .house-search {
+    margin-left: 0;
+    font-size: 11px;
+  }
+  .house-query {
+    flex: 1;
+  }
+  .planner-toolbar {
+    gap: 14px;
+  }
+  .planner-toolbar > .tabs {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .planner-toolbar > .tabs button {
+    flex: 1;
+    font-size: 11px;
+    padding: 10px;
+  }
+  .ripple-figures {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .ripple-figures strong {
+    font-size: 21px;
+  }
+  .ripple-figures small {
+    font-size: 10px;
+  }
+  .compact {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  .participation-status {
+    font-size: 11px;
+  }
+  .alternative-list button {
+    padding: 15px;
+    gap: 10px;
+  }
+  .alternative-list button strong {
+    font-size: 13px;
+  }
+  .alternative-list button small {
+    font-size: 11px;
+  }
+  .alternative-list button span {
+    font-size: 12px;
+  }
+  .persona-select {
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+  .persona-select select {
+    width: 100%;
+    font-size: 12px;
+  }
+  .opportunity-form,
+  .application-card {
+    padding: 23px;
+    gap: 22px;
+    overflow: visible;
+  }
+  .roof-fields {
+    gap: 18px;
+  }
+  .roof-fields label {
+    font-size: 11px;
+  }
+  .roof-fields input,
+  .roof-fields select {
+    font-size: 12px;
+  }
+  .estimate-equations {
+    padding: 17px;
+  }
+  .estimate-equations p {
+    font-size: 12px;
+  }
+  .estimate-equations small {
+    font-size: 11px;
+  }
+  .consent-check {
+    font-size: 12px;
+  }
+  .opportunity-result {
+    padding: 28px;
+    gap: 25px;
+    overflow: visible;
+  }
+  .opportunity-result > strong {
+    font-size: 43px;
+  }
+  .opportunity-result > small {
+    font-size: 11px;
+  }
+  .application-details {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .application-details strong {
+    font-size: 12px;
+  }
+  .record-history {
+    overflow: visible;
+    min-height: 0;
+  }
+  .record-history p {
+    font-size: 12px;
+  }
+  .support-list,
+  .support-detail {
+    padding: 23px;
+    gap: 22px;
+    overflow: visible;
+  }
+  .case-item strong {
+    font-size: 13px;
+  }
+  .case-item p {
+    font-size: 12px;
+  }
+  .application-table {
+    padding: 16px;
+    min-height: 400px;
+  }
+  .table-scroll {
+    max-height: 500px;
+  }
+  .application-table td {
+    padding: 12px 8px;
+  }
+  .application-table td > strong {
+    font-size: 12px;
+  }
+  .application-table th {
+    font-size: 8px;
+    padding: 10px 7px;
+  }
+  .application-table .participation-status {
+    font-size: 8px;
+  }
+  .application-table td small {
+    font-size: 7px;
+  }
+  .application-table td:nth-child(3),
+  .application-table th:nth-child(3) {
+    display: none;
+  }
+  .application-table .text-button {
+    font-size: 10px;
+  }
+  .insights-card {
+    padding: 18px;
+    gap: 25px;
+  }
+  .insights-card .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .insight-body {
+    padding: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .insight-body > svg {
+    display: none;
+  }
+  .insight-body h2 {
+    font-size: 24px;
+  }
+  .insight-body p {
+    font-size: 12px;
+  }
+  .property-panel textarea {
+    font-size: 12px;
+    min-height: 90px;
+  }
+  .resident-next {
+    padding: 27px;
+  }
+  .property-panel .button {
+    font-size: 12px;
+  }
+}
