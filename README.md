@@ -21,7 +21,13 @@ npm run build
 npm run preview
 ```
 
-Build output is in `dist/`. Do not put `node_modules`, `dist`, or `.git` inside the source submission ZIP. The included GitHub Actions workflow builds and deploys the site to GitHub Pages once configured.
+Build output is in `dist/`. Do not put `node_modules`, `dist`, or `.git` inside the source submission ZIP.
+
+## Deploy to GitHub Pages
+
+The GitHub Actions workflow builds the Vite app and deploys `dist/` to GitHub Pages on pushes to `main` or when manually run from the Actions tab. In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. The project-site URL is <https://amnihudzori.github.io/solarshare-ai/>.
+
+This is a static frontend: application data is stored in the browser, and no backend service is required. The app uses hash-based routing, so page navigation works on GitHub Pages without server-side route rewrites.
 
 ## Main interfaces
 
@@ -84,6 +90,6 @@ src/*.test.js                 Unit tests for rules and storage
 
 
 
-If you use another repository name, update `base` in `vite.config.js`. **This project was not pushed or deployed by this audit.**
+If you use another repository name, update `base` in `vite.config.js` to match its project-site path.
 
 See `TESTING.md` for test evidence and remaining verification.
